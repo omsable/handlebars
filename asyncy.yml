@@ -3,7 +3,19 @@ commands:
     help: |
       Evaluate a Handlebars template
     args:
+      - name: Path
+        type: file
+        required: true
+        help: |
+          Path to template
       - name: expressions
         type: string
+        required: false
+        help: |
+          Handlebar expressions
 
-volume: false
+volume: true
+
+env:
+  TEMPLATE_PATH:
+  EXPRESSIONS:
