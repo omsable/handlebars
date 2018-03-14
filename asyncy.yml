@@ -1,0 +1,9 @@
+commands:
+  template:
+    help: |
+      Evaluate a Handlebars template
+    args:
+      - name: expressions
+        type: string
+
+volume: false
