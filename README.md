@@ -3,5 +3,5 @@
 
 ```sh
 # usage.story
-result = handlebars "Hello {{name}}" "--name foobar"
+result = handlebars `/tmp/foo.hbs` --name bar
 ```
