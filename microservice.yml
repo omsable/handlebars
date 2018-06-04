@@ -2,20 +2,23 @@ commands:
   template:
     help: |
       Evaluate a Handlebars template
-    args:
-      - name: Path
-        type: file
+    arguments:
+      path:
+        type: string
         required: true
         help: |
           Path to template
-      - name: expressions
+      expressions:
         type: string
-        required: false
         help: |
           Handlebar expressions
 
-volume: true
+volumes:
+  handlebar:
+    target: /handlebar
 
-env:
+environment:
   TEMPLATE_PATH:
+    type: string
   EXPRESSIONS:
+    type: string
